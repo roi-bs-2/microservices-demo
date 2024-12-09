@@ -1,34 +1,38 @@
-# Guide 🚀
+# Getting Started with Port 🚀
 
-## Steps
+This guide will help you set up a service catalog for your microservices using Port.
 
-### 🔄 Fork the repo
+## Prerequisites
 
-https://github.com/port-labs/microservices-demo/tree/main
+1. ✨ Create a free Port account at https://app.getport.io/signup
+2. ✉️ Verify your email address
+3. 🔄 Fork the demo repository: https://github.com/port-labs/microservices-demo/tree/main
 
-### ✨ Create a free account on Port
+## Setting Up GitHub Integration
 
-https://app.getport.io/signup
-
-### ✉️ Verify your email
-
-Log in to your email and verify your account.
-
-### 🔗 Integrate the repo with Port
+### Option 1: Automatic Setup
 
 1. In this example, we'll use GitHub as our integration source.
    ![Integrations](./docs/assets/pick-git.png)
-2. Install the Port GitHub app, and give it the necessary permissions for the forked repo.
-3. If it doesn't work, you can manually add the integration in Port by clicking on the top right `Builder` button, and then on the left sidebar, click on `Data sources` and then click on `new data source`.
 
-### 🔧 Configure the monorepo integration
+1. Select GitHub as your integration source
+1. Install the Port GitHub app and grant permissions for your forked repo
 
-1. Go to the [data-sources](https://app.getport.io/settings/data-sources) page of your portal.
-2. Under `Exporters`, click on the GitHub you would like to edit.
+### Option 2: Manual Setup
+
+If automatic setup doesn't work:
+
+1. Click the `Builder` button in the top right
+2. Select `Data sources` from the left sidebar
+3. Click `New data source`
+
+## Configuring the Monorepo Integration
+
+1. Navigate to [Data Sources](https://app.getport.io/settings/data-sources)
+2. Locate your GitHub integration under `Exporters`
    ![monorepoDataSourcesExample](./docs/assets/monorepoDataSourcesExample.png)
-3. Click on the `three dots` button on the right.
-4. Click on `Edit`.
-5. Paste the following configuration in the `Mapping` section on the bottom-left:
+3. Click the `three dots` menu → `Edit`
+4. Add the following configuration to the `Mapping` section:
 
 ```yaml
 resources:
@@ -50,26 +54,23 @@ resources:
             readme: file://README.md
 ```
 
-6. Click on `Save & Resync`.
-7. Wait for the sync to complete.
+5. Click `Save & Resync` and wait for synchronization to complete
 
-You've successfully synced your monorepo to Port. Congratulations!
+## Viewing Your Service Catalog
 
-View your service catalog [here](https://app.getport.io/services).
+Once synced, you can access your service catalog at https://app.getport.io/services, where you'll find:
 
-You just created a list of services:
-![services](./docs/assets/services.png)
+1. **Service List View**
+   ![services](./docs/assets/services.png)
 
-For each service, you have a documentation page:
-![service-page](./docs/assets/service-page.png)
+2. **Individual Service Pages** with documentation
+   ![service-page](./docs/assets/service-page.png)
 
-For each service, you have a scorecard:
-![scorecard](./docs/assets/scorecard.png)
+3. **Service Scorecards** for quality metrics
+   ![scorecard](./docs/assets/scorecard.png)
+   Learn more about scorecards [here](https://www.getport.io/guide/scorecards)
 
-To learn more about what a scorecard is, read more [here](https://www.getport.io/guide/scorecards).
+## Next Steps
 
-### 📊 Next Steps: Adding Language Information
-
-As you can see, there is no information about the programming languages used in each service. To enhance your service catalog with language details, proceed to the next guide:
-
+To enhance your service catalog with programming language information, proceed to:
 [Adding Language Information](ADDING-LANGUAGE.md)

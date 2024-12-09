@@ -1,9 +1,21 @@
-# Port's demo repo
+# Port's Demo Repository
 
-This repo is a fork of [Microservices repo example by Google](https://github.com/GoogleCloudPlatform/microservices-demo).
+A demonstration repository showcasing Port's developer portal capabilities, based on Google's [microservices demo](https://github.com/GoogleCloudPlatform/microservices-demo).
 
-This can be used as sample data for you to build a portal with dummy data.
+## Overview
 
-## Getting Started
+This repository provides sample data to help you:
 
-Start by reading the [Getting Started Guide](GETTING-STARTED.md).
+- Build a functional developer portal
+- Understand Port's core features
+- Experiment with portal customization
+
+## Quick Start
+
+Follow our three-part guide series to:
+
+1. Set up a fully functional developer portal
+2. Explore using example data
+3. Learn Port's fundamental concepts
+
+👉 Begin with the [Getting Started Guide](GETTING-STARTED.md)

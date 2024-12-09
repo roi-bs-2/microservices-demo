@@ -9,13 +9,30 @@ End result:
     <img src="./docs/assets/languages-2.png" alt="languages-pie" style="max-width: 48%; height: auto; object-fit: contain;">
 </div>
 
-## Understanding the Basics
+## Key Concepts
 
-There are only three words you need to know to understand how to add programming language detection to your software catalog: **Blueprint**, **Mapping**, and **Entity**.
+Before implementing anything in Port, let's understand three essential building blocks:
 
-**Blueprints** are the schema of your **Entities**. They define the structure of your entities, for example, what properties and relationships an entity can have, just like a class definition in a programming language or a table schema in a database.
+**Blueprint**
 
-**Mappings** are the rules that tell Port how to extract and transform data from your sources (like Git repositories) into Port **Entities**.
+- The schema or template that defines your data structure
+- Think of it like a class in programming: it defines the properties and relationships
+- Example: A blueprint for a Jira issue would define properties
+  like `title`, `description`, `status`, `priority`, `assignee`,
+  etc., and could have relationships to other blueprints like `user`
+  (for the assignee) and `project`
+
+**Entity**
+
+- A specific instance of a blueprint (like an object of a class)
+- Contains the actual data for a service, issue, or other resource
+- Example: The "payment-service" entity contains details about your payment microservice
+
+**Mapping**
+
+- [JQ](https://jq.getport.io) rules that convert your source data into Port entities
+- Defines where to find data and how to transform it
+- Example: Converting a GitHub repository's data into a service entity
 
 ## Step-by-Step Implementation
 
@@ -146,3 +163,9 @@ To fully understand above mappings, you can read the following guides:
 - [Configure Mapping](https://docs.getport.io/build-your-software-catalog/customize-integrations/configure-mapping/)
 - [Setup Blueprint](https://docs.getport.io/build-your-software-catalog/customize-integrations/configure-data-model/setup-blueprint/)
 - [Relate Blueprints](https://docs.getport.io/build-your-software-catalog/customize-integrations/configure-data-model/relate-blueprints/)
+
+## Next Steps
+
+To add self-service actions to your software catalog, proceed to:
+
+[Adding Self-Service Actions](SELF-SERVICE-ACTIONS.md)
