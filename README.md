@@ -18,4 +18,7 @@ Follow our three-part guide series to:
 2. Explore using example data
 3. Learn Port's fundamental concepts
 
+> [!NOTE]  
+> 💡 The entire series should take about 15 minutes to complete. Good luck!
+
 👉 Begin with the [Getting Started Guide](GETTING-STARTED.md)

@@ -4,9 +4,10 @@ This guide will help you set up a service catalog for your microservices using P
 
 ## Prerequisites
 
-1. ✨ Create a free Port account at https://app.getport.io/signup
-2. ✉️ Verify your email address
-3. 🔄 Fork the demo repository: https://github.com/port-labs/microservices-demo/tree/main
+1. 🔄 Fork the demo repository: https://github.com/port-labs/microservices-demo/tree/main
+   - If you rename the repository, be sure to note the new name for later steps
+2. ✨ Create a free Port account at https://app.getport.io/signup
+3. ✉️ Verify your email address
 
 ## Setting Up GitHub Integration
 
@@ -26,13 +27,15 @@ If automatic setup doesn't work:
 2. Select `Data sources` from the left sidebar
 3. Click `New data source`
 
+![New Data Source](./docs/assets/new-data-source.png)
+
 ## Configuring the Monorepo Integration
 
-1. Navigate to [Data Sources](https://app.getport.io/settings/data-sources)
+1. Navigate to [Data Sources](https://app.getport.io/settings/data-sources) or click the `Builder` button in the top right and select `Data sources` from the left sidebar
 2. Locate your GitHub integration under `Exporters`
-   ![monorepoDataSourcesExample](./docs/assets/monorepoDataSourcesExample.png)
-3. Click the `three dots` menu → `Edit`
-4. Add the following configuration to the `Mapping` section:
+   ![Monorepo Data Sources](./docs/assets/data-sources-example.png)
+3. Click on the card or click the `three dots` menu → `Edit`
+4. Add the following configuration to the `Mapping` section on the bottom-left:
 
 ```yaml
 resources:
@@ -53,6 +56,9 @@ resources:
             url: .repo.html_url + "/tree/" + .repo.default_branch  + "/" + .folder.path
             readme: file://README.md
 ```
+
+> [!IMPORTANT]  
+> If you renamed your repository after forking, make sure to update the `microservices-demo` value under `repos:` in the mapping configuration above to match your new repository name.
 
 5. Click `Save & Resync` and wait for synchronization to complete
 
