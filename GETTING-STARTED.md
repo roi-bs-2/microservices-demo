@@ -76,6 +76,14 @@ Once synced, you can access your service catalog at https://app.getport.io/servi
    ![scorecard](./docs/assets/scorecard.png)
    Learn more about scorecards [here](https://www.getport.io/guide/scorecards)
 
+## Troubleshooting
+
+If you see no services, check the following:
+
+- Ensure that you forked this repository
+- Ensure that Port's GitHub app is installed and has the necessary permissions for this forked repository
+- If you renamed the repository after forking, make sure to update the `microservices-demo` value under `repos:` in the mapping configuration above to match your new repository name
+
 ## Next Steps
 
 To enhance your service catalog with programming language information, proceed to:
