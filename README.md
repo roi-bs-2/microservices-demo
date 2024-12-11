@@ -14,9 +14,9 @@ This repository provides sample data to help you:
 
 Follow our three-part guide series to:
 
-1. Set up a fully functional developer portal
-2. Explore using example data
-3. Learn Port's fundamental concepts
+1. Set up an initial Portal [Getting Started Guide](GETTING-STARTED.md)
+2. Add advanced mapping to detect languages used per service [Adding Language Detection](ADDING-LANGUAGE.md)
+3. Add a self-service action to drive developer autonomy [Adding Self Service Actions](SELF-SERVICE-ACTIONS.md)
 
 > [!NOTE]  
 > 💡 The entire series should take about 15 minutes to complete. Good luck!
