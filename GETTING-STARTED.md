@@ -7,7 +7,6 @@ This guide will help you set up a service catalog for your microservices using P
 1. 🔄 Fork the demo repository: https://github.com/port-labs/microservices-demo/tree/main
    - If you rename the repository, be sure to note the new name for later steps
 2. ✨ Create a free Port account at https://app.getport.io/signup
-3. ✉️ Verify your email address
 
 ## Setting Up GitHub Integration
 
@@ -64,7 +63,9 @@ resources:
 
 ## Viewing Your Service Catalog
 
-Once synced, you can access your service catalog at https://app.getport.io/services, where you'll find:
+Once synced, you can access your service catalog!
+
+Click `Catalog` at the top page and pick `Services` from the left sidebar or click [here](https://app.getport.io/services), where you'll find:
 
 1. **Service List View**
    ![services](./docs/assets/services.png)

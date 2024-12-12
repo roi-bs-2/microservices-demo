@@ -27,6 +27,11 @@ In this example, we'll create a self-service action that calls an external API f
 
 Make sure you completed the [Getting Started](./GETTING-STARTED.md) guide.
 
+> [!IMPORTANT]  
+> Make sure your Github repository has Github Actions enabled.
+>
+> Read more [here](https://docs.github.com/en/actions/managing-workflow-runs-and-deployments/managing-workflow-runs/disabling-and-enabling-a-workflow#enabling-a-workflow)
+
 ## Create a self-service action
 
 1. Go to the [Actions](https://app.getport.io/self-serve) page.
@@ -62,7 +67,15 @@ For testing purposes, we will use the [webhook.site](https://webhook.site/) serv
 4. Hit `Execute`.
 
 You should see the action executed and the github workflow running in your repository.
-After the workflow is finished, inside the webhook.site you should see the payload.
+
+After the workflow is finished, inside the [webhook.site](https://webhook.site/) you should see the payload.
+
+## Troubleshooting
+
+If you don't see the payload, check the following:
+
+- Goto to the actions tab in your repository and see if the workflow is running.
+- Make sure the workflow is enabled in your repository.
 
 # Further reading
 
