@@ -25,7 +25,7 @@ In this example, we'll create a self-service action that calls an external API f
 
 ## Prerequisites
 
-Make sure you accomplished the [Getting Started](./GETTING-STARTED.md) guide.
+Make sure you completed the [Getting Started](./GETTING-STARTED.md) guide.
 
 ## Create a self-service action
 
@@ -52,7 +52,7 @@ Congratulations! You should see the action in the UI and it should be similar to
 
 ## Test the action
 
-For testing purposes, we will use the [webhook.site](https://webhook.site/) service to immitate an external API.
+For testing purposes, we will use the [webhook.site](https://webhook.site/) service to imitate an external API.
 
 1. Go to [webhook.site](https://webhook.site/) and copy your unique URL.
 2. Click on the action card you just created.
