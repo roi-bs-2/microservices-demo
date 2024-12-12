@@ -9,6 +9,8 @@ End result:
     <img src="./docs/assets/languages-2.png" alt="languages-pie" style="max-width: 48%; height: auto; object-fit: contain;">
 </div>
 
+---
+
 ## Key Concepts
 
 Before implementing anything in Port, let's understand three essential building blocks:
@@ -72,7 +74,8 @@ port:
         language: '"JavaScript"'
 ```
 
-Then click on `Save & Resync`.
+> [!IMPORTANT]  
+> If you renamed your repository after forking, make sure to change like before.
 
 **This mapping looks for package.json files in service directories to identify JavaScript/Node.js services.**
 
