@@ -74,7 +74,7 @@ After the workflow is finished, inside the [webhook.site](https://webhook.site/)
 
 If you don't see the payload, check the following:
 
-- Goto to the actions tab in your repository and see if the workflow is running.
+- Goto to the self-service tab in your repository and see if the workflow is running.
 - Make sure the workflow is enabled in your repository.
 
 # Further reading
