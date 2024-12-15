@@ -76,6 +76,7 @@ If you don't see the payload, check the following:
 
 - Goto to the self-service tab in your repository and see if the workflow is running.
 - Make sure the workflow is enabled in your repository.
+  - Goto the actions tab in your repository and make sure the workflow is enabled.
 
 # Further reading
 
